@@ -1,13 +1,5 @@
-"""Calendar link generation utilities."""
+"""Utilities for extracting calendar events from Word documents."""
 
-from .calendar_urls import (
-    CalendarEvent,
-    build_google_calendar_url,
-    build_outlook_calendar_url,
-)
+from .parser import CalendarEvent, parse_events_from_docx
 
-__all__ = [
-    "CalendarEvent",
-    "build_google_calendar_url",
-    "build_outlook_calendar_url",
-]
+__all__ = ["CalendarEvent", "parse_events_from_docx"]
